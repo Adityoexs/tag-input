@@ -1,0 +1,49 @@
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #e0f0ff;
+  color: #0070f3;
+  border: 1px solid #b3d9ff;
+  border-radius: 9999px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  max-width: 200px;
+}
+
+.tag-pill__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tag-pill__remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0070f3;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tag-pill__remove:hover {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.tag-pill__remove:active {
+  background-color: #0051b3;
+  color: #fff;
+}
+
+.tag-pill__remove:focus-visible {
+  outline: 2px solid #0070f3;
+  outline-offset: 2px;
+}
